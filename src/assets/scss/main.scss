@@ -1,0 +1,161 @@
+$grey: #2c3e50;
+$green: #4fc08d;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: $grey;
+    text-align: center;
+    position: relative;
+
+    .manager {
+        width: fit-content;
+        margin: 0 auto;
+        padding-top: 15px;
+
+        form {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            .inputs-line {
+                margin-bottom: 5px;
+
+                input {
+                    width: 200px;
+                    padding: 10px 15px;
+                    outline: none;
+                    border: 2px solid $green;
+                }
+
+                .left-input {
+                    border-radius: 50px 0 0 50px;
+                    margin-right: 5px;
+                }
+
+                .right-input {
+                    border-radius: 0 50px 50px 0;
+                }
+            }
+
+            .buttons-line {
+                text-align: left;
+
+                .button {
+                    background: #fff;
+                    padding: 10px 15px;
+                    outline: none;
+                    border: 2px solid $green;
+                    border-radius: 50px;
+                    color: $green;
+                    font-weight: 700;
+                    transition: 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: $green;
+                        color: #fff;
+                    }
+
+                    &+.button {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .list {
+            text-align: left;
+
+            &-item {
+                margin-bottom: 10px;
+
+                &-date {
+                    color: #ccc;
+                    font-size: 12px;
+                }
+
+                a {
+                    color: $green;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                .bold {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .generator-wrapper {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+
+        .generator {
+            padding: 20px;
+            background: #fff;
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 70px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+            cursor: auto;
+
+            &-field {
+                width: 365px;
+                padding: 10px;
+                border: 2px solid $green;
+                font-size: 22px;
+                font-weight: 700;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            .checkbox-line {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+
+                input {
+                    margin-right: 5px;
+                    background: $green;
+                }
+            }
+
+            .input-length,
+            button {
+                padding: 10px 15px;
+                border: 2px solid $green;
+                background: #fff;
+                border-radius: 50px;
+                outline: none;
+            }
+
+            .input-length {
+                width: 70px;
+                text-align: center;
+            }
+
+            button {
+                margin-left: 20px;
+                cursor: pointer;
+                color: $green;
+                transition: 0.3s;
+
+                &:hover {
+                    background: $green;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
