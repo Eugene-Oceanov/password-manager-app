@@ -22,13 +22,13 @@
     },
     data() {
       return {
-        generatorFlag: true,
+        generatorFlag: false,
         itemsArr: [
           {
             id: 0,
-            title: "Ingos",
-            link: "https://www.ingos.ru",
-            login: "Oceanov",
+            title: "Example.com",
+            link: "#",
+            login: "Username",
             password: "qwerty1234",
             date: new Date(Date.now()).toLocaleString(),
           }

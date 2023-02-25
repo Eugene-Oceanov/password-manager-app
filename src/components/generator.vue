@@ -63,7 +63,7 @@ export default {
         generatePw() {
             this.concatArr();
             this.pw = "";
-            if(parseInt(this.pwLength)) {
+            if(parseInt(this.pwLength) && parseInt(this.pwLength) <= 25) {
                 for(let i = 0; i <= this.pwLength; i++) {
                     this.pw += this.pwArr[this.getRandomInt(0, this.pwArr.length - 1)];
                 }
